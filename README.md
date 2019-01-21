@@ -298,11 +298,11 @@ hidden： 指定元素背面不可见
 
 
 
-[1]: http://css.doyoe.com/ "css参考手册"
-[2]: ./transition.html/ "transition用法"
-[3]: ./animation.html/ "animation的demo"
-[4]: ./perspective.html/ "perspective的demo"
-[5]: https://www.zhangxinxu.com/study/201206/css3-transform-matrix-skew.html/ "matrix和skew的demo"
-[6]: https://www.zhangxinxu.com/study/201206/css3-transform-matrix-mirror.html/ "matrix与镜像对称的demo"
+[1]: http://css.doyoe.com "css参考手册"
+[2]: ./transition.html "transition用法"
+[3]: ./animation.html "animation的demo"
+[4]: ./perspective.html "perspective的demo"
+[5]: https://www.zhangxinxu.com/study/201206/css3-transform-matrix-skew.html "matrix和skew的demo"
+[6]: https://www.zhangxinxu.com/study/201206/css3-transform-matrix-mirror.html "matrix与镜像对称的demo"
 
 
