@@ -21,7 +21,7 @@ transition是一个复合属性，一共可拆分出四个具体的属性
 
  * transition-timiong-function每一个值都表示一种特定的运动状态 
  
- ## API
+## API
 
 | Option | Description | Type |  
 |--------| ----------- | ---- | 
