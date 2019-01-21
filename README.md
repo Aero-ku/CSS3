@@ -23,28 +23,13 @@ transition是一个复合属性，一共可拆分出四个具体的属性
  
  ## API
 
- | Option | Description | Type |  
- |--------| ----------- | ---- | 
- | linear | 线性过渡 | 等同于贝塞尔曲线(0.0, 0.0, 1.0, 1.0) |  
- | ease   | 平滑过渡 | 等同于贝塞尔曲线(0.25, 0.1, 0.25, 1.0) |  
- | ease-in |由慢到快 | 等同于贝塞尔曲线(0.42, 0, 1.0, 1.0) |  
- | ease-out | 由快到慢 | 等同于贝塞尔曲线(0, 0, 0.58, 1.0) |  
- | ease-in-out | 由慢到快再到慢 | 等同于贝塞尔曲线(0.42, 0, 0.58, 1.0) |  
-
-
-## API
-
-| Option | Description     |  Type  | Default Value |
-| ------ | --------------- | ------ | ------------- |
-| className | checkbox的类名 | string | 无
-| style | 定义checkbox的样式 | object | {}            |
-| defaultChecked | 初始是否选中 | boolean | 无 |
-| checked | 指定当前是否选中 | boolean | 无 | 
-| disabled | 是否禁用| boolean | false |
-|label | checkbox中每一项的文字描述 | string | 无
-| onChange | 当选项改变时触发的函数 |  (checked: boolean, event: any) => void | boolean
-
-
+| Option | Description | Type |  
+|--------| ----------- | ---- | 
+| linear | 线性过渡 | 等同于贝塞尔曲线(0.0, 0.0, 1.0, 1.0) |  
+| ease   | 平滑过渡 | 等同于贝塞尔曲线(0.25, 0.1, 0.25, 1.0) |  
+| ease-in |由慢到快 | 等同于贝塞尔曲线(0.42, 0, 1.0, 1.0) |  
+| ease-out | 由快到慢 | 等同于贝塞尔曲线(0, 0, 0.58, 1.0) |  
+| ease-in-out | 由慢到快再到慢 | 等同于贝塞尔曲线(0.42, 0, 0.58, 1.0) |  
 
  * css中有些属性是不支持过渡动画的，比如display。如果不明白某一个属性是否支持动画效果，可以到[css参考手册][1]查找对应的属性，每个属性都有一个语法，其中的动画性会有具体描述是否有动画效果
 
