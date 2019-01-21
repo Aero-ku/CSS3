@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8" />
+<style>
+.wrapper {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    border: 1px solid #000;
+    -webkit-perspective: 50px;
+    perspective: 50px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-animation: test 5s infinite;
+    animation: test 5s infinite;
+}
+.wrapper > div {
+    width: 180px;
+    height: 120px;
+    margin: 40px 10px;
+    background-color: #0098e5;
+    -webkit-transform: rotatex(45deg);
+    transform: rotatex(45deg);
+}
+@-webkit-keyframes test {
+    from {
+        -webkit-perspective: 50px;
+    }
+    to {
+        -webkit-perspective: 350px;
+    }
+}
+@keyframes test {
+    from {
+        perspective: 50px;
+    }
+    to {
+        perspective: 350px;
+    }
+}
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+    <div>1</div>
+</div>
+</body>
+</html>

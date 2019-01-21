@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+body,html{
+    background:#fff;
+}
+main{
+    height:300px;
+    width:300px;
+    margin:150px auto;
+    position:relative;
+    transform-style:preserve-3d;
+    animation: rotate 6s linear infinite;
+    perspective:3000px;
+    transform-origin: center center;
+    perspective-origin: center center;
+}
+main div{
+    position:absolute;
+    height:100%;
+    width:100%;
+    line-height:300px;
+    text-align:center;
+    color:#fff;
+    font-size:28px;
+    box-shadow: 0 0 15px rgba(0,0,0, 0.2);
+    background-color: rbga(255,255,255,.1);
+    color: gray;
+    text-align: center;
+}
+.front{
+    background: #0098e5;
+    background-size:100%;
+    transform:translateZ(150px);
+}
+.back{
+    background: #ff6a4c;
+    background-size:100%;
+    transform:translateZ(-150px);
+}
+.left{
+    background: #009837;
+    background-size:100%;
+    transform:rotateY(90deg) translateZ(150px);
+}
+.right{
+    background: #439;
+    background-size:100%;
+    transform:rotateY(-90deg) translateZ(150px);
+}
+.top{
+    background: #ff0;
+    background-size:100%;
+    transform:rotateX(-90deg) translateZ(150px);
+}
+.bottom{
+    background: #911;
+    transform:rotateX(-90deg) translateZ(-150px);
+}
+main:hover > div:nth-of-type(7){
+    transform:translateZ(300px);
+    background:orangered;
+}
+main:hover > div:nth-of-type(8){
+    transform:translateZ(-300px);
+    background:#0098e5;
+}
+main:hover > div:nth-of-type(9){
+    transform:rotateY(90deg) translateZ(300px);
+    background:deeppink;
+}
+main:hover > div:nth-of-type(10){
+    transform:rotateY(-90deg) translateZ(300px);
+    background:	BlueViolet;
+}
+/*顶*/
+main:hover > div:nth-of-type(11){
+    transform: rotateX(-90deg) translateZ(300px);
+    background:MediumSpringGreen;
+}
+main:hover > div:nth-of-type(12){
+    transform:rotateX(90deg) translateZ(300px);
+    background:red;
+}
+main:hover{
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+}
+@keyframes rotate{
+    from{
+        /*同时沿着X轴和Y轴旋转*/
+        transform:rotateX(0deg) rotateY(0deg);
+    }
+    to{
+        transform:rotateX(360deg) rotateY(360deg);
+    }
+}
+    </style>
+</head>
+<body>
+    <main>
+        <div class="front">1</div>
+        <div class="back">2</div>
+        <div class="left">3</div>
+        <div class="right">4</div>
+        <div class="top">5</div>
+        <div class="bottom">6</div>
+        <!-- <div>前</div>
+        <div>后</div>
+        <div>左</div>
+        <div>右</div>
+        <div>上</div>
+        <div>下</div> -->
+    </main>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .arc {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60px;
+        padding: 60px;
+        text-align: center;
+        color: white;
+        font-size: 200%;
+      }
+      .arc {
+        background: radial-gradient(
+              circle at top left,
+              transparent 14px,
+              red 16px,
+              transparent 0
+            )
+            top left,
+          radial-gradient(
+              circle at top right,
+              transparent 14px,
+              red 16px,
+              transparent 0
+            )
+            top right,
+          radial-gradient(
+              circle at bottom right,
+              transparent 14px,
+              red 16px,
+              transparent 0
+            )
+            bottom right,
+          radial-gradient(
+              circle at bottom left,
+              transparent 14px,
+              red 16px,
+              transparent 0
+            )
+            bottom left;
+        background-size: 50% 50%;
+        background-repeat: no-repeat;
+      }
+      .arc::before {
+        content: "";
+        position: absolute;
+        height: 99%;
+        width: 83.5%;
+        margin: auto;
+        left: 15px;
+        top: 0;
+        border-top: 1px solid red;
+        border-bottom: 1px solid red;
+      }
+      .arc::after {
+        content: "";
+        position: absolute;
+        width: 99%;
+        height: 81%;
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        left: 0;
+        top: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>单标签实现圆弧切角</h1>
+    <div class="arc">arc</div>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    div{
+        position: absolute;
+        top:0px;
+        left: 0px;
+        width: 100px;
+        height: 100px;
+        background: #ff6a4c;
+        animation: run 4s 2, change-color 4s infinite;
+    }
+    @keyframes run {
+        0%{
+            left:0px;
+            top: 0px;
+        }
+        25%{
+            left: 100px;
+            top: 0px;
+        }
+        50%{
+            left: 100px;
+            top: 100px;
+        }
+        75%{
+            left: 0px;
+            top: 100px;
+        }
+        100%{
+            left: 0px;
+            top: 0px;
+        }
+    }
+    @keyframes change-color{
+        0%{
+            background: #ff6a4c;
+        }
+        33.33%{
+            background: red;
+        }
+        66.66%{
+            background: yellow;
+        }
+        100%{
+            background: #ff6a4c;
+        }
+    }
+    div:hover {
+        animation-play-state: paused;
+    }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
