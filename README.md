@@ -31,7 +31,10 @@ transition是一个复合属性，一共可拆分出四个具体的属性
  | ease-out | 由快到慢 | 等同于贝塞尔曲线(0, 0, 0.58, 1.0) |  
  | ease-in-out | 由慢到快再到慢 | 等同于贝塞尔曲线(0.42, 0, 0.58, 1.0) |  
 
- | Option | Description     |  Type  | Default Value |
+
+## API
+
+| Option | Description     |  Type  | Default Value |
 | ------ | --------------- | ------ | ------------- |
 | className | checkbox的类名 | string | 无
 | style | 定义checkbox的样式 | object | {}            |
@@ -40,6 +43,8 @@ transition是一个复合属性，一共可拆分出四个具体的属性
 | disabled | 是否禁用| boolean | false |
 |label | checkbox中每一项的文字描述 | string | 无
 | onChange | 当选项改变时触发的函数 |  (checked: boolean, event: any) => void | boolean
+
+
 
  * css中有些属性是不支持过渡动画的，比如display。如果不明白某一个属性是否支持动画效果，可以到[css参考手册][1]查找对应的属性，每个属性都有一个语法，其中的动画性会有具体描述是否有动画效果
 
