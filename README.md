@@ -76,7 +76,8 @@ div{
 ```
 [transition的demo][2]  
 ![transition](./img/transition.gif)
-### transition的兼容性
+
+### transition的兼容性
 ![transition](./img/transition.png)
 
 
