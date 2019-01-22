@@ -1,5 +1,6 @@
 # CSS3动画系列
 css3动画适合于实现一些简单的，基础动画，如果要实现一些特别复杂的动画效果比如按照自定义的不规则曲线进行运动，或者涉及到多个关键帧并且每个关键帧有不同的运动状态的话，在当前用css3就不太适合了。还是要配合svg、flash、js等其他技术来实现
+
 ## transition相关
 transition从效果上看它更像是一个过渡动画，当一个状态A转变到另一个状态B的过程，如果没有设置效果的话它会直接转变过去，如果我们在这个过程当中添加一个transition的效果的话，那么从A状态到B状态就会有动画形式的效果展现这个变化的过程。
 
@@ -7,7 +8,7 @@ transition从效果上看它更像是一个过渡动画，当一个状态A转变
 transition是一个复合属性，一共可拆分出四个具体的属性  
 * transition-property：设置对象中参与过渡的属性, 默认值为all  
 * transition-duration：设置对象过渡的持续时间, 默认值为0  
-* transition-timing-function：指定对象中过渡的动画类型，默认值为ease  
+* transition-timing-function：指定对象中过渡的动画类型, 默认值为ease  
 * transition-delay：设置对象延迟过渡的时间，也就是设置过渡动画开始前的等待时间,默认值为0  
 
 ### 注意要点
@@ -78,7 +79,7 @@ div{
 
 
 ## animation相关
-与transition相比， animation除了从状态A变为状态B之外，还支持从状态B变到状态C。再变到D状态，...，一直变化下去
+与transition相比，animation除了从状态A变为状态B之外，还支持从状态B变到状态C。再变到D状态，...，一直变化下去
 也就是说animation可以实现一个多状态改变的连续动画，transition则只能实现一个状态改变的动画。相比之下，animation则更为强大和完整，css3的动画主要也是围绕animation展开的。
 
 ### animation属性介绍  
@@ -118,7 +119,7 @@ alternate-reverse： 动画先反运行再正方向运行，并持续交替运�
 这个属性在不同浏览器实现的效果是不一样的，由暂停状态切回运动状态时有的浏览器会从暂停的位置开始运动，有的浏览器会从最初的位置重新开始运动（w3c正考虑移除该属性，因为在一些场景中会有错误行为而且部分浏览器不支持伪元素动画，或者支持得不够好，尽可能不要利用伪元素来做动画），最好通过其他方式控制运动状态
 * animation-fill-mode: 
 ### animation的用法
- [animation的demo][3]
+ [animation 的demo][3]
 
 ### animation的兼容性
  ![animation兼容性](./img/animation.png)
