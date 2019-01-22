@@ -1,5 +1,7 @@
 # CSS3动画系列
-css3动画适合于实现一些简单的，基础动画，如果要实现一些特别复杂的动画效果比如按照自定义的不规则曲线进行运动，或者涉及到多个关键帧并且每个关键帧有不同的运动状态的话，在当前用css3就不太适合了。还是要配合svg、flash、js等其他技术来实现
+css3动画适合于实现一些简单的，基础动画，如果要实现一些特别复杂的动画效果比如按照自定义的不规则曲线进行运动，或者涉及到多个关键帧并且每个关键帧有不同的运动状态的话，在当前用css3就不太适合了。还是要配合svg、flash、js等其他技术来实现。
+
+
 
 ## transition相关
 transition从效果上看它更像是一个过渡动画，当一个状态A转变到另一个状态B的过程，如果没有设置效果的话它会直接转变过去，如果我们在这个过程当中添加一个transition的效果的话，那么从A状态到B状态就会有动画形式的效果展现这个变化的过程。
@@ -74,6 +76,7 @@ div{
     transition: all 1s;
 }
 ```
+![transition](./img/transition.gif)
 ### transition的兼容性
 ![transition](./img/transition.png)
 
@@ -120,6 +123,8 @@ alternate-reverse： 动画先反运行再正方向运行，并持续交替运�
 * animation-fill-mode: 
 ### animation的用法
  [animation 的demo][3]
+
+![animation](./img/animation.gif)
 
 ### animation的兼容性
  ![animation兼容性](./img/animation.png)
@@ -237,6 +242,8 @@ matrix3d(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15)有16个参数，这16个参数�
 3维旋转稍微复杂，因为旋转的轴有可能不是标准的x,y,z轴了，而可能是任何一个向量。一般可用欧拉角和四元数表示旋转，而欧拉旋转由于存在“万向节死锁”问题，所以最好还是用四元数来表示， 因为3D旋转比较复杂，在一般场景下使用时，建议直接使用rotate3d。  
 ![3D旋转](./img/3D旋转.png)  
 
+
+
 #### 既然css3给我们封装了好了rotate、translate、skew等方便的接口，那matrix有何用？
 确实，对于一般的交互应用，利用transform属性提供的方法是足够的，但是一些其他的效果，如果transform属性没有提供接口方法，那你又该怎么办呢？比如,镜像对称的效果。
 点击这里：[matrix与镜像对称的demo][6]
@@ -290,8 +297,8 @@ bottom：指定透视点的纵坐标为bottom
 * 对应的脚本特性为perspectiveOrigin
 
 ### perspective用法
-[perspective的demo][4] 
-
+[一个结合perspectived、transform相关属性的demo][4] 
+![一个结合perspectived、transform相关属性的demo](./img/立方体.gif)
 ### backface-visibility取值
 默认值： visible
 visible: 指定元素背面可见，允许显示正面的镜像
