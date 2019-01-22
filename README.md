@@ -297,8 +297,8 @@ bottom：指定透视点的纵坐标为bottom
 * 对应的脚本特性为perspectiveOrigin
 
 ### perspective用法
-[一个结合perspectived、transform相关属性的demo][4] 
-![一个结合perspectived、transform相关属性的demo](./img/立方体.gif)
+[一个结合perspective, transform相关属性的demo][4] 
+![一个结合perspectived, transform相关属性的demo](./img/立方体.gif)
 ### backface-visibility取值
 默认值： visible
 visible: 指定元素背面可见，允许显示正面的镜像
