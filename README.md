@@ -1,5 +1,5 @@
 # CSS3动画系列
-css3动画适合于实现一些简单的，基础动画，如果要实现一些特别复杂的动画效果比如按照自定义的不规则曲线进行运动，或者涉及到多个关键帧并且每个关键帧有不同的运动状态的话，在当前用css3就不太适合了。还是要配合svg、flash、js等其他技术来实现。
+&nbsp;&nbsp;本文主要介绍一些和css相关的动画属性与使用的一些心得。css3动画适合于实现一些简单的，基础动画，如果要实现一些特别复杂的动画效果, 比如按照自定义的不规则曲线进行运动，或者涉及到多个关键帧并且每个关键帧有不同的运动状态的话，在当前用css3就不太适合了。还是要配合svg、flash、js等其他技术来实现。
 
 ## transition相关
 transition从效果上看它更像是一个过渡动画，当一个状态A转变到另一个状态B的过程，如果没有设置效果的话它会直接转变过去，如果我们在这个过程当中添加一个transition的效果的话，那么从A状态到B状态就会有动画形式的效果展现这个变化的过程。
@@ -74,7 +74,7 @@ div{
     transition: all 1s;
 }
 ```
-[transition的demo][2]  
+[transition'demo](2)
 ![transition](./img/transition.gif)
 
 ### transition的兼容性
@@ -82,8 +82,8 @@ div{
 
 
 ## animation相关
-与transition相比，animation除了从状态A变为状态B之外，还支持从状态B变到状态C。再变到D状态，...，一直变化下去
-也就是说animation可以实现一个多状态改变的连续动画，transition则只能实现一个状态改变的动画。相比之下，animation则更为强大和完整，css3的动画主要也是围绕animation展开的。
+与transition相比, animation除了从状态A变为状态B之外，还支持从状态B变到状态C。再变到D状态，..., 一直变化下去  
+也就是说animation可以实现一个多状态改变的连续动画, transition则只能实现一个状态改变的动画。 相比之下，animation则更为强大和完整，css3的动画主要也是围绕animation展开的。
 
 ### animation属性介绍  
 
