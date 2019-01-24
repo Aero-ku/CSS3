@@ -49,7 +49,8 @@ div{
 ```
 
 ### transition的用法
-
+[transition'demo][2]
+![transition](./img/transition.gif)
 有如下一个div
 ```
 div{
@@ -74,8 +75,7 @@ div{
     transition: all 1s;
 }
 ```
-[transition'demo](2)
-![transition](./img/transition.gif)
+
 
 ### transition的兼容性
 ![transition](./img/transition.png)
