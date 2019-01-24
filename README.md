@@ -36,46 +36,11 @@ transition是一个复合属性，一共可拆分出四个具体的属性
 
 transition支持为同一个元素定义多个过渡的属性, 属性之间用逗号隔开
 比如
-```
-div{
-    height: 100px;
-    width: 100px;
-    background: red;
-    transition:
-        backgroundColor 2s linear,
-        height 2s ease-in,
-        width 2s ease-out;
-}
-```
+
 
 ### transition的用法
 [transition'demo][2]
 ![transition](./img/transition.gif)
-有如下一个div
-```
-div{
-    height: 100px;
-    width: 100px;
-    background: red
-}
-
-div:hover{
-    height: 200px;
-    width: 300px;
-    background: yellow
-}
-```
-当鼠标停留在该div上时，这个div会立即由红色的100*100正方形变成黄色的300 * 200的长方形，这是我们未加过渡的效果
-当我们加上过渡的时候, 可以发现就有一个过渡的效果。
-```
-div{
-    height: 100px;
-    width: 100px;
-    background: red;
-    transition: all 1s;
-}
-```
-
 
 ### transition的兼容性
 ![transition](./img/transition.png)
